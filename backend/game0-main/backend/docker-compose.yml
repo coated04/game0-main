@@ -1,0 +1,12 @@
+version: '26.0.0'
+
+services:
+  game0-main:
+    image: game0-image
+    container_name: game0-container
+    ports:
+      - "8081:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/game0-projectdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 2001

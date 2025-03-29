@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f7fc, #e2eafc);
+  color: #444;
+  padding: 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2, h3 {
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+li {
+  background: #fff;
+  padding: 25px;
+  margin: 10px 0;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+
+li:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: #007BFF;
+}
+
+li img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover img {
+  transform: scale(1.05);
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 15px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 380px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Button Styles */
+button {
+  background-color: #007BFF; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 15px; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+button:focus {
+  outline: none;
+}
